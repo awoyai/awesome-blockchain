@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad036c3d-9277-427b-890b-7db0fe8af807" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/awesome-blockchain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curve/elliptic_curve.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math-tools/mod.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math-tools/point.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math-tools/pow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curve/elliptic_curve.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curve/elliptic_curve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math-tools/mod.go" beforeDir="false" afterPath="$PROJECT_DIR$/math-tools/mod.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math-tools/point.go" beforeDir="false" afterPath="$PROJECT_DIR$/math-tools/point.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math-tools/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/math-tools/pow.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/curve/elliptic_curve.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/curve/elliptic_curve_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/math-tools/mod.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/math-tools/pow.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/math-tools/point.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="23gInXeNVTQa4Ig6ZWHMlmr0a0S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,12 +59,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/math-tools" />
-    <property name="settings.editor.selected.configurable" value="MTHome" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -63,5 +81,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

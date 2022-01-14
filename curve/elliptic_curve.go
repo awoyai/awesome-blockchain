@@ -1,10 +1,9 @@
 package curve
 
 import (
+	mathT "github.com/wuyedebianhua/awesome-blockchain/math-tools"
 	"math/big"
-	mathT "awesome-blockchain/math-tools"
 )
-
 
 var Point0 = mathT.Point{X: big.NewInt(0), Y: big.NewInt(0)}
 
@@ -87,4 +86,10 @@ func (e *EllipticCurve) getY2ByX(x *big.Int) *big.Int {
 	x3AndB := new(big.Int).Add(x3, e.B)
 	y := new(big.Int).Add(x3AndB, new(big.Int).Mul(e.A, x))
 	return new(big.Int).Mod(y, e.Order)
+}
+
+func (e *EllipticCurve) GetPointByX(x *big.Int) mathT.Point {
+	y2 := e.getY2ByX(x)
+	y2.Sqrt(y2).Mod(y2, e.Order)
+	return mathT.Point{X: x, Y: y2}
 }
