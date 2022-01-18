@@ -1,6 +1,7 @@
 package EC_ElGamal
 
 import (
+	"crypto/rand"
 	"crypto/sha1"
 	"errors"
 	"github.com/wuyedebianhua/awesome-blockchain/curve"
@@ -20,10 +21,9 @@ func (e *ECElGamal) Encrypt(m mathT.Point) (ans [2]mathT.Point, err error) {
 	if !e.y.OnCurve(m) {
 		return ans, errors.New("the point doesn't on curve")
 	}
-	// TODO:// 替换成随机数
-	r := big.NewInt(2)
-	ans[0] = e.y.Mul(e.G, r)
-	ans[1] = e.y.Add(m, e.KG)
+	k, _ := rand.Int(rand.Reader,e.y.Order)
+	ans[0] = e.y.Mul(e.G, k)
+	ans[1] = e.y.Add(m, e.y.Mul(e.KG, k))
 	return
 }
 
@@ -31,7 +31,7 @@ func (e *ECElGamal) Decrypt(cm [2]mathT.Point) (mathT.Point, error) {
 	if e.K == nil {
 		return mathT.Point{}, errors.New("have no private Key")
 	}
-	return e.y.Sub(e.y.Mul(cm[1], e.K), cm[0]), nil
+	return e.y.Sub(cm[1],e.y.Mul(cm[0], e.K)), nil
 }
 
 func NewECElGamalByPrivateKey(K *big.Int, G mathT.Point, y curve.EllipticCurve) ECElGamal {
@@ -42,9 +42,9 @@ func NewECElGamalByPublicKey(G, KG mathT.Point, y curve.EllipticCurve) ECElGamal
 	return ECElGamal{G: G, KG: KG, y: y}
 }
 
-func (e *ECElGamal) TransferMessage2Point(messaGe string) mathT.Point {
+func (e *ECElGamal) TransferMessage2Point(message string) mathT.Point {
 	h := sha1.New()
-	h.Write([]byte(messaGe))
+	h.Write([]byte(message))
 	xx := h.Sum(nil)
-	return e.y.GetPointByX(new(big.Int).SetBytes(xx))
+	return e.y.Mul(e.G, new(big.Int).SetBytes(xx))
 }

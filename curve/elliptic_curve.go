@@ -47,8 +47,16 @@ func (e *EllipticCurve) Sub(a, b mathT.Point) mathT.Point {
 
 func (e *EllipticCurve) Mul(a mathT.Point, k *big.Int) mathT.Point {
 	res := Point0
-	for i := big.NewInt(0); i.Cmp(k) < 0; i.Add(i, big.NewInt(1)) {
-		res = e.Add(res, a)
+	{
+		k := new(big.Int).Set(k)
+		a := a
+		for k.Int64() != 0 {
+			if k.Int64()&1 == 1 {
+				res = e.Add(res, a)
+			}
+			k.Rsh(k, 1)
+			a = e.Add(a, a)
+		}
 	}
 	return res
 }
@@ -86,10 +94,4 @@ func (e *EllipticCurve) getY2ByX(x *big.Int) *big.Int {
 	x3AndB := new(big.Int).Add(x3, e.B)
 	y := new(big.Int).Add(x3AndB, new(big.Int).Mul(e.A, x))
 	return new(big.Int).Mod(y, e.Order)
-}
-
-func (e *EllipticCurve) GetPointByX(x *big.Int) mathT.Point {
-	y2 := e.getY2ByX(x)
-	y2.Sqrt(y2).Mod(y2, e.Order)
-	return mathT.Point{X: x, Y: y2}
 }

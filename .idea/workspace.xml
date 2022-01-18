@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad036c3d-9277-427b-890b-7db0fe8af807" name="Changes" comment="">
+    <list default="true" id="1a6ce820-9f60-4474-83b2-5a8ee3769d4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ECDSA/ecdsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECDSA/ecdsa_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curve/btc_curve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curve/elliptic_curve.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curve/elliptic_curve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math-tools/mod.go" beforeDir="false" afterPath="$PROJECT_DIR$/math-tools/mod.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math-tools/point.go" beforeDir="false" afterPath="$PROJECT_DIR$/math-tools/point.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math-tools/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/math-tools/pow.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
-    <option name="urls">
-      <list>
-        <option value="file://$PROJECT_DIR$" />
-      </list>
-    </option>
+    <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/curve/elliptic_curve.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/curve/elliptic_curve_test.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/math-tools/mod.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/math-tools/pow.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/math-tools/point.go" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProjectId" id="23gInXeNVTQa4Ig6ZWHMlmr0a0S" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="23o18faD6IMAMBuVjiWQ0oq8qtF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,24 +45,126 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable..is.expanded" value="false" />
-    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/math-tools" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\go\test\awesome-blockchain\math-tools" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\go\test\awesome-blockchain\pkg" />
-      <recent name="C:\go\test\awesome-blockchain\math-tools" />
-      <recent name="C:\go\test\awesome-blockchain\tools\elliptic-curve" />
-    </key>
+  <component name="RunManager" selected="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/ECDSA" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/ECDSA" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestECDSA_Sign\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/EC-ElGamal" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestECElGamal_TransferMessage2Point\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestMod in github.com/wuyedebianhua/awesome-blockchain/math-tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/math-tools" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/math-tools" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestMod\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_CalculateThird in github.com/wuyedebianhua/awesome-blockchain/curve" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/curve" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/curve" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_CalculateThird\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_TestCurve in github.com/wuyedebianhua/awesome-blockchain/curve" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/curve" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/curve" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_TestCurve\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_TestCurve2 in github.com/wuyedebianhua/awesome-blockchain/curve" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/curve" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/curve" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_TestCurve2\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mod_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/math-tools" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/math-tools/mod_test.go" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA" />
+        <item itemvalue="Go Test.TestMod in github.com/wuyedebianhua/awesome-blockchain/math-tools" />
+        <item itemvalue="Go Test.mod_test.go" />
+        <item itemvalue="Go Test.Test_TestCurve in github.com/wuyedebianhua/awesome-blockchain/curve" />
+        <item itemvalue="Go Test.Test_TestCurve2 in github.com/wuyedebianhua/awesome-blockchain/curve" />
+        <item itemvalue="Go Test.TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal" />
+        <item itemvalue="Go Test.Test_CalculateThird in github.com/wuyedebianhua/awesome-blockchain/curve" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +180,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/awesome_blockchain$TestECDSA_Sign_in_github_com_wuyedebianhua_awesome_blockchain_ECDSA.out" NAME="TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA Coverage Results" MODIFIED="1642410256741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

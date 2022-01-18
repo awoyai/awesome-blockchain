@@ -64,3 +64,51 @@ func Test_CheckOnCurve(t *testing.T) {
 	}
 	println(curve.OnCurve(G))
 }
+
+
+
+func Test_TestCurve(t *testing.T) {
+	order := big.NewInt(43)
+	c := NewEllipticCurve(big.NewInt(0), big.NewInt(1), order)
+	G := mathT.Point{
+		X: big.NewInt(2),
+		Y: big.NewInt(3),
+	}
+	fmt.Println(c.OnCurve(G))
+	z := big.NewInt(22332)
+	z.Mod(z, order)
+	da := big.NewInt(23232311)
+	da.Mod(da, order)
+	k := big.NewInt(3214141241)
+	k.Mod(k, order)
+
+	P := c.Mul(G, k)
+	fmt.Println("P",P)
+	r := new(big.Int).Mod(P.X, order)
+	num := new(big.Int).Mul(r, da)
+	num.Add(num, z)
+	s := mathT.Mod(new(big.Rat).SetFrac(num, k), order)
+	fmt.Println("R", r)
+	fmt.Println("S", s)
+
+	negS := mathT.Mod(new(big.Rat).SetFrac(big.NewInt(1), s), order)
+
+	p1 := c.Mul(G, new(big.Int).Mul(negS, z))
+	p2 := c.Mul(c.Mul(G, da), new(big.Int).Mul(negS, r))
+	p3 := c.Add(p1, p2)
+	fmt.Println("p1", p1)
+	fmt.Println("p2", p2)
+	fmt.Println("p3", p3)
+}
+
+func Test_TestCurve2(t *testing.T) {
+	order := big.NewInt(23)
+	c := NewEllipticCurve(big.NewInt(0), big.NewInt(1), order)
+	G := mathT.Point{
+		X: big.NewInt(2),
+		Y: big.NewInt(3),
+	}
+	m := big.NewInt(24)
+	p2 := c.Mul(G, m.Mod(m, order))
+	fmt.Println(p2)
+}
