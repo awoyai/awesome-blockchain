@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6ce820-9f60-4474-83b2-5a8ee3769d4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EC-ElGamal/tmp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schnorr/schnorr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schnorr/schnorr_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curve/btc_curve.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/secp_256k1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECDSA/ecdsa.go" beforeDir="false" afterPath="$PROJECT_DIR$/ECDSA/ecdsa.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECDSA/ecdsa_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ECDSA/ecdsa_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curve/elliptic_curve.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schnorr/schnorr.go" beforeDir="false" afterPath="$PROJECT_DIR$/schnorr/schnorr.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +53,9 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="settings.editor.selected.configurable" value="MTHome" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
-  <component name="RunManager" selected="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA">
+  <component name="RunManager" selected="Go Test.TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="awesome-blockchain" />
       <working_directory value="$PROJECT_DIR$" />
@@ -60,6 +63,18 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/ECDSA" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/ECDSA" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestECDSA_Sign\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -72,6 +87,18 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestECDSA_Sign\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/EC-ElGamal" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestECElGamal_TransferMessage2Point\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -108,6 +135,18 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTest_CalculateThird\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Schnorr in github.com/wuyedebianhua/awesome-blockchain/schnorr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/schnorr" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/schnorr" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_Schnorr\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_TestCurve in github.com/wuyedebianhua/awesome-blockchain/curve" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -156,6 +195,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (1)" />
+        <item itemvalue="Go Test.Test_Schnorr in github.com/wuyedebianhua/awesome-blockchain/schnorr" />
+        <item itemvalue="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA (1)" />
         <item itemvalue="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA" />
         <item itemvalue="Go Test.TestMod in github.com/wuyedebianhua/awesome-blockchain/math-tools" />
         <item itemvalue="Go Test.mod_test.go" />
@@ -180,6 +222,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

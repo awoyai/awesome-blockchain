@@ -41,7 +41,6 @@ func (e *EllipticCurve) Add(a, b mathT.Point) mathT.Point {
 func (e *EllipticCurve) Sub(a, b mathT.Point) mathT.Point {
 	b.Y.Mul(b.Y, big.NewInt(-1)).Mod(b.Y, e.Order)
 	sub := e.Add(a, b)
-	sub.Y.Mul(sub.Y, big.NewInt(-1)).Mod(sub.Y, e.Order)
 	return sub
 }
 
