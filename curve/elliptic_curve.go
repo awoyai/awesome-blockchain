@@ -8,14 +8,28 @@ import (
 var Point0 = mathT.Point{X: big.NewInt(0), Y: big.NewInt(0)}
 
 type EllipticCurve struct {
-	A, B, Order *big.Int
+	A, B, N, Order *big.Int
 }
 
-func NewEllipticCurve(A, B, order *big.Int) EllipticCurve {
+func NewEllipticCurve(A, B, N, order *big.Int) EllipticCurve {
 	return EllipticCurve{
 		A:     A,
 		B:     B,
+		N:     N,
 		Order: order,
+	}
+}
+
+func NewEllipticCurveByStr(a, b, n, order string) EllipticCurve {
+	A, _ := new(big.Int).SetString(a, 10)
+	B, _ := new(big.Int).SetString(b, 10)
+	N, _ := new(big.Int).SetString(n, 10)
+	Order, _ := new(big.Int).SetString(order, 10)
+	return EllipticCurve{
+		A:     A,
+		B:     B,
+		N:     N,
+		Order: Order,
 	}
 }
 

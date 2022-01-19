@@ -3,6 +3,7 @@ package ECDSA
 import (
 	"crypto/rand"
 	"crypto/sha1"
+	"fmt"
 	"github.com/wuyedebianhua/awesome-blockchain/curve"
 	mathT "github.com/wuyedebianhua/awesome-blockchain/math-tools"
 	"math/big"
@@ -26,20 +27,21 @@ func NewECDSAByPrivateKey(da *big.Int, g mathT.Point, curve curve.EllipticCurve)
 
 func (e *ECDSA) Sign(message string) (*big.Int, *big.Int) {
 	z := e.sha1Message(message)
-	k, _ := rand.Int(rand.Reader, e.Curve.Order)
-	r := new(big.Int).Mod(e.Curve.Mul(e.G, k).X, e.Curve.Order)
-	num := new(big.Int)
-	num = num.Add(new(big.Int).Mul(e.DA, r), z).Mod(num, e.Curve.Order)
-	s := mathT.Mod(new(big.Rat).SetFrac(num, k), e.Curve.Order)
+	k, _ := rand.Int(rand.Reader, e.Curve.N)
+	k = big.NewInt(2)
+	negK := new(big.Int).Exp(k, big.NewInt(-1), e.Curve.N)
+	r := e.Curve.Mul(e.G, k).X
+	s := new(big.Int).Add(new(big.Int).Mul(e.DA, r), z)
+	s.Mul(s, negK).Mod(s, e.Curve.N)
 	return r, s
 }
 
 func (e *ECDSA) Valid(message string, r, s *big.Int) bool {
-	negS := mathT.Mod(new(big.Rat).SetFrac(big.NewInt(1), s), e.Curve.Order)
+	negS := new(big.Int).Exp(s, big.NewInt(-1), e.Curve.N)
 	z := e.sha1Message(message)
-	point1 := new(big.Int).Mod(new(big.Int).Mul(z, negS), e.Curve.Order)
-	point2 := new(big.Int).Mod(new(big.Int).Mul(r, negS), e.Curve.Order)
-	P := e.Curve.Add(e.Curve.Mul(e.G, point1), e.Curve.Mul(e.QA, point2))
+	// P = KG  KG = S^-1 (Z*G + R*QA)
+	P := e.Curve.Mul(e.Curve.Add(e.Curve.Mul(e.G, z), e.Curve.Mul(e.QA, r)), negS)
+	fmt.Println("P.x", P.X)
 	return P.X.Cmp(r) == 0
 }
 

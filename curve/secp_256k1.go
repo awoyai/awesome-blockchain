@@ -9,7 +9,8 @@ func NewSecp256k1Curve() EllipticCurve {
 	A := big.NewInt(0)
 	B := big.NewInt(7)
 	order, _ := new(big.Int).SetString("115792089237316195423570985008687907853269984665640564039457584007908834671663", 10)
-	return NewEllipticCurve(A, B, order)
+	N, _ := new(big.Int).SetString("115792089237316195423570985008687907852837564279074904382605163141518161494337", 10)
+	return NewEllipticCurve(A, B, N, order)
 }
 
 func NewSecp256k1G() mathT.Point {

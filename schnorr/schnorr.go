@@ -44,10 +44,9 @@ func (sc *Schnorr) hash(p, r mathT.Point, message string) *big.Int {
 }
 
 func (sc *Schnorr) Verify(c, s *big.Int, message string) bool {
-	// R‘ = S * G - C * PK
-	sg := sc.Curve.Mul(sc.G, s)
-	cpk := sc.Curve.Mul(sc.Pk, c)
-	r := sc.Curve.Sub(sg, cpk)
+	// R' = S * G - C * PK
+	r := sc.Curve.Sub(sc.Curve.Mul(sc.G, s), sc.Curve.Mul(sc.Pk, c))
+	// C' = hash(Pk, R', m)
 	c_ := sc.hash(sc.Pk, r, message)
 	return c_.Cmp(c) == 0
 }
