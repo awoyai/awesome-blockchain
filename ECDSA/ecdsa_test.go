@@ -1,9 +1,9 @@
 package ECDSA
 
 import (
+	"crypto/rand"
 	"fmt"
 	"github.com/wuyedebianhua/awesome-blockchain/curve"
-	"math/big"
 	"testing"
 )
 
@@ -11,9 +11,7 @@ func TestECDSA_Sign(t *testing.T) {
 	c := curve.NewSecp256k1Curve()
 	G := curve.NewSecp256k1G()
 	message := "hello world"
-	// todo random da
-	//k, _ := rand.Int(rand.Reader, c.Order)
-	da := big.NewInt(123)
+	da, _ := rand.Int(rand.Reader, c.Order)
 	fmt.Println(c.OnCurve(G))
 	ecdsa := NewECDSAByPrivateKey(da, G, c)
 	r, s := ecdsa.Sign(message)

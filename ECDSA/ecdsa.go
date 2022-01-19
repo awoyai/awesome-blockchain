@@ -28,7 +28,6 @@ func NewECDSAByPrivateKey(da *big.Int, g mathT.Point, curve curve.EllipticCurve)
 func (e *ECDSA) Sign(message string) (*big.Int, *big.Int) {
 	z := e.sha1Message(message)
 	k, _ := rand.Int(rand.Reader, e.Curve.N)
-	k = big.NewInt(2)
 	negK := new(big.Int).Exp(k, big.NewInt(-1), e.Curve.N)
 	r := e.Curve.Mul(e.G, k).X
 	s := new(big.Int).Add(new(big.Int).Mul(e.DA, r), z)
