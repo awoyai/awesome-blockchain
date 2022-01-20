@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a6ce820-9f60-4474-83b2-5a8ee3769d4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECDSA/ecdsa.go" beforeDir="false" afterPath="$PROJECT_DIR$/ECDSA/ecdsa.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curve/elliptic_curve.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curve/elliptic_curve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curve/secp_256k1.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/secp_256k1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECDSA/ecdsa_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ECDSA/ecdsa_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schnorr/schnorr.go" beforeDir="false" afterPath="$PROJECT_DIR$/schnorr/schnorr.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
-  <component name="RunManager" selected="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA (1)">
+  <component name="RunManager" selected="Go Test.TestECDSA_SignX3 in github.com/wuyedebianhua/awesome-blockchain/ECDSA">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="awesome-blockchain" />
       <working_directory value="$PROJECT_DIR$" />
@@ -84,6 +81,18 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestECDSA_Sign\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestECDSA_SignX3 in github.com/wuyedebianhua/awesome-blockchain/ECDSA" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/ECDSA" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/ECDSA" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestECDSA_SignX3\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -228,9 +237,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestECDSA_SignX3 in github.com/wuyedebianhua/awesome-blockchain/ECDSA" />
         <item itemvalue="Go Test.TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA (1)" />
-        <item itemvalue="Go Test.Test_CheckOnCurve in github.com/wuyedebianhua/awesome-blockchain/curve" />
         <item itemvalue="Go Test.TestSchnorr_Sign in github.com/wuyedebianhua/awesome-blockchain/schnorr" />
+        <item itemvalue="Go Test.Test_CheckOnCurve in github.com/wuyedebianhua/awesome-blockchain/curve" />
         <item itemvalue="Go Test.TestSchnorr_Verify in github.com/wuyedebianhua/awesome-blockchain/schnorr" />
         <item itemvalue="Go Test.TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (1)" />
         <item itemvalue="Go Test.Test_Schnorr in github.com/wuyedebianhua/awesome-blockchain/schnorr" />

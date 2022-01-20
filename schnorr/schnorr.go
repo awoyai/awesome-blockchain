@@ -28,10 +28,9 @@ func (sc *Schnorr) Sign(message string) (c, s *big.Int) {
 	k, _ := rand.Int(rand.Reader, sc.Curve.Order)
 	r := sc.Curve.Mul(sc.G, k)
 	c = sc.hash(sc.Pk, r, message)
-	c.Mod(c, sc.Curve.Order)
 	// S = K + C * Sk
 	s = new(big.Int).Mul(c, sc.Sk)
-	s.Add(k, s)
+	s.Add(k, s).Mod(s ,sc.Curve.N)
 	return
 }
 
