@@ -48,5 +48,5 @@ func (e *ECDSA) sha1Message(message string) *big.Int {
 	h := sha1.New()
 	h.Write([]byte(message))
 	z := new(big.Int).SetBytes(h.Sum(nil))
-	return z.Mod(z, e.Curve.Order)
+	return z.Mod(z, e.Curve.P)
 }

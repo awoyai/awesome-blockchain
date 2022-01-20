@@ -25,7 +25,7 @@ func TestSchnorr_Sign(t *testing.T) {
 		},
 	}
 	for _, v := range ts {
-		sk, _ := rand.Int(rand.Reader, v.Curve.Order)
+		sk, _ := rand.Int(rand.Reader, v.Curve.P)
 		schnorr := NewSchnorr(v.Curve, v.G, sk)
 		c,s := schnorr.Sign(v.testText)
 		b := schnorr.Verify(c, s, v.testText)
@@ -45,7 +45,7 @@ type tests struct {
 func TestSchnorr_Verify(t *testing.T) {
 	curve2561k1 := curve.NewSecp256k1Curve()
 	G2561k1 := curve.NewSecp256k1G()
-	sk, _ := rand.Int(rand.Reader, curve2561k1.Order)
+	sk, _ := rand.Int(rand.Reader, curve2561k1.P)
 	schnorr := NewSchnorr(curve2561k1, G2561k1, sk)
 
 

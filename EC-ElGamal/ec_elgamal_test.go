@@ -10,7 +10,7 @@ import (
 func TestECElGamal_TransferMessage2Point(t *testing.T) {
 	c := curve.NewSecp256k1Curve()
 	G := curve.NewSecp256k1G()
-	sk, _ := rand.Int(rand.Reader, c.Order)
+	sk, _ := rand.Int(rand.Reader, c.P)
 	eceg := NewECElGamalByPrivateKey(sk, G, c)
 	mPoint := eceg.TransferMessage2Point("hello")
 

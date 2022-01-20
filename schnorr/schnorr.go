@@ -25,7 +25,7 @@ func NewSchnorr(ellipticCurve curve.EllipticCurve, g mathT.Point, sk *big.Int) S
 }
 
 func (sc *Schnorr) Sign(message string) (c, s *big.Int) {
-	k, _ := rand.Int(rand.Reader, sc.Curve.Order)
+	k, _ := rand.Int(rand.Reader, sc.Curve.P)
 	r := sc.Curve.Mul(sc.G, k)
 	c = sc.hash(sc.Pk, r, message)
 	// S = K + C * Sk
@@ -39,7 +39,7 @@ func (sc *Schnorr) hash(p, r mathT.Point, message string) *big.Int {
 	h := sha1.New()
 	h.Write([]byte(str))
 	c := new(big.Int).SetBytes(h.Sum(nil))
-	return c.Mod(c, sc.Curve.Order)
+	return c.Mod(c, sc.Curve.P)
 }
 
 func (sc *Schnorr) Verify(c, s *big.Int, message string) bool {
