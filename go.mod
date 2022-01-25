@@ -2,7 +2,10 @@ module github.com/wuyedebianhua/awesome-blockchain
 
 go 1.17
 
-require go.dedis.ch/kyber/v3 v3.0.13
+require (
+	github.com/mjibson/go-dsp v0.0.0-20180508042940-11479a337f12
+	go.dedis.ch/kyber/v3 v3.0.13
+)
 
 require (
 	go.dedis.ch/fixbuf v1.0.3 // indirect

@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6ce820-9f60-4474-83b2-5a8ee3769d4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fft/fft.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fft/fft_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fft/fft.go" beforeDir="false" afterPath="$PROJECT_DIR$/fft/fft.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fft/fft_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/fft/fft_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Go Test.Test_splitByOddAndEven in github.com/wuyedebianhua/awesome-blockchain/fft">
+  <component name="RunManager" selected="Go Test.Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="awesome-blockchain" />
       <working_directory value="$PROJECT_DIR$" />
@@ -239,6 +241,54 @@
       <pattern value="^\QTest_TestCurve2\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/fft" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/fft" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_fft\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/fft" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/fft" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_fft\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_math in github.com/wuyedebianhua/awesome-blockchain/fft (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/fft" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/fft" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_math\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_math in github.com/wuyedebianhua/awesome-blockchain/fft" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/fft" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/fft" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_math\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_splitByOddAndEven in github.com/wuyedebianhua/awesome-blockchain/fft" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="awesome-blockchain" />
       <working_directory value="$PROJECT_DIR$/fft" />
@@ -283,6 +333,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft (1)" />
+        <item itemvalue="Go Test.Test_math in github.com/wuyedebianhua/awesome-blockchain/fft (1)" />
+        <item itemvalue="Go Test.Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft" />
+        <item itemvalue="Go Test.Test_math in github.com/wuyedebianhua/awesome-blockchain/fft" />
         <item itemvalue="Go Test.Test_splitByOddAndEven in github.com/wuyedebianhua/awesome-blockchain/fft" />
         <item itemvalue="Go Test.fft_test.go" />
         <item itemvalue="Go Test.TestSqrt/sqrt(49),_p=19 in github.com/wuyedebianhua/awesome-blockchain/math-tools" />
@@ -322,6 +376,17 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/mjibson/go-dsp@v0.0.0-20180508042940-11479a337f12/fft/fft.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/awesome_blockchain$TestECDSA_Sign_in_github_com_wuyedebianhua_awesome_blockchain_ECDSA.out" NAME="TestECDSA_Sign in github.com/wuyedebianhua/awesome-blockchain/ECDSA Coverage Results" MODIFIED="1642410256741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
