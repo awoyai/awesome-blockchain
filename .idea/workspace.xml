@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1a6ce820-9f60-4474-83b2-5a8ee3769d4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fft/fft.go" beforeDir="false" afterPath="$PROJECT_DIR$/fft/fft.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fft/fft_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/fft/fft_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/EC-ElGamal/ec_elgamal_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curve/elliptic_curve.go" beforeDir="false" afterPath="$PROJECT_DIR$/curve/elliptic_curve.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Go Test.Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft (1)">
+  <component name="RunManager" selected="Go Test.TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (2)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="awesome-blockchain" />
       <working_directory value="$PROJECT_DIR$" />
@@ -98,6 +97,18 @@
       <method v="2" />
     </configuration>
     <configuration name="TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="awesome-blockchain" />
+      <working_directory value="$PROJECT_DIR$/EC-ElGamal" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestECElGamal_TransferMessage2Point\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="awesome-blockchain" />
       <working_directory value="$PROJECT_DIR$/EC-ElGamal" />
       <root_directory value="$PROJECT_DIR$" />
@@ -333,6 +344,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestECElGamal_TransferMessage2Point in github.com/wuyedebianhua/awesome-blockchain/EC-ElGamal (2)" />
         <item itemvalue="Go Test.Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft (1)" />
         <item itemvalue="Go Test.Test_math in github.com/wuyedebianhua/awesome-blockchain/fft (1)" />
         <item itemvalue="Go Test.Test_fft in github.com/wuyedebianhua/awesome-blockchain/fft" />

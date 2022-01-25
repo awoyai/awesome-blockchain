@@ -98,10 +98,10 @@ func (e *EllipticCurve) CalculateK(a, b mathT.Point) *big.Int {
 
 func (e *EllipticCurve) OnCurve(p mathT.Point) bool {
 	py2 := new(big.Int).Mod(mathT.Pow(p.Y, 2), e.P)
-	return e.getY2ByX(p.X).Cmp(py2) == 0
+	return e.GetY2ByX(p.X).Cmp(py2) == 0
 }
 
-func (e *EllipticCurve) getY2ByX(x *big.Int) *big.Int {
+func (e *EllipticCurve) GetY2ByX(x *big.Int) *big.Int {
 	// x^3 + ax + b
 	x3 := mathT.Pow(x, 3)
 	x3AndB := new(big.Int).Add(x3, e.B)
